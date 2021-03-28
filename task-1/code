@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int x,m;
+    printf("Enter the coordinate of the friend's house : ");
+    scanf("%d",&x);
+    if(x<6)
+      printf("The minimum number of step is one");
+    else if (x%5==0)
+        m=x/5;
+    else
+        m=x/5 +1;
+    printf("The minimum number of step is %d",m);
+    return 0;
+}
